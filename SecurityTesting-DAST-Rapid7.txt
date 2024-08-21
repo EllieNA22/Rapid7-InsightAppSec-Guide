@@ -1,0 +1,95 @@
+Rapid7 InsightAppSec Guide: A Comprehensive Learning Material
+
+Introduction to Rapid7 InsightAppSec
+
+Rapid7 InsightAppSec is a dynamic application security testing (DAST) tool designed to identify vulnerabilities in web applications. It helps organizations assess and improve the security posture of their web applications by scanning them for vulnerabilities and providing actionable insights.
+
+This guide will provide you with a detailed understanding of how to use InsightAppSec, from setting up scans to integrating with tools like Jira. Additionally, we’ll explore whether InsightAppSec is a manual or automated security testing tool.
+-------------------------------------------------------------------
+
+Table of Contents
+Getting Started with InsightAppSec
+
+Overview
+Key Features
+Setting Up and Configuring Scans
+
+How to Scan a URL
+Configuring Scan Settings
+Running Scans
+Viewing and Understanding Reports
+
+Accessing Scan Results
+Analyzing Vulnerabilities
+Exporting and Sharing Reports
+Integrating InsightAppSec with Jira
+
+Setting Up Jira Integration
+Automatically Creating Jira Issues from Scan Results
+Managing Vulnerabilities in Jira
+-----------------------------------------------------------------------
+1. Getting Started with InsightAppSec
+Overview
+Rapid7 InsightAppSec is part of the Insight platform, which offers a range of security tools. InsightAppSec focuses on dynamic application security testing, allowing you to scan web applications for security flaws such as SQL injection, cross-site scripting (XSS), and more.
+
+Key Features
+Comprehensive Scanning: Supports a wide range of web technologies and performs deep scans for known vulnerabilities.
+Vulnerability Management: Helps prioritize vulnerabilities based on risk and impact.
+Integration: Seamless integration with tools like Jira, making it easy to manage security issues in existing workflows.
+----------------------------------------------------------------------------------------
+2. Setting Up and Configuring Scans
+How to Scan a URL
+Log in to InsightAppSec:
+
+Navigate to the Rapid7 Insight platform and log in with your credentials.
+Create a New Application:
+
+Go to the "Applications" tab and click on "Create Application."
+Enter the URL of the web application you want to scan.
+Add any additional details like the application name, description, and environment (e.g., Production, Development).
+Configure Scan Settings:
+
+After adding the URL, configure your scan settings. Choose between a full scan or a targeted scan based on specific URLs or parameters.
+Customize the scan’s depth, timeout settings, and authentication if needed.
+Run the Scan:
+
+Once configured, click on "Start Scan." InsightAppSec will begin scanning the specified URL for vulnerabilities.
+You can monitor the scan's progress in real-time.
+-----------------------------------------------------------------------------------------
+3. Viewing and Understanding Reports
+Accessing Scan Results
+View Completed Scans:
+
+Once the scan is complete, go to the "Scans" tab under your application.
+Select the completed scan to view the detailed results.
+Analyzing Vulnerabilities:
+
+The report will list all identified vulnerabilities along with their severity (e.g., Critical, High, Medium, Low).
+For each vulnerability, InsightAppSec provides a description, impact, and suggested remediation steps.
+Exporting and Sharing Reports:
+
+You can export the report in various formats such as PDF or CSV.
+Share the report with stakeholders or save it for compliance purposes.
+-------------------------------------------------------------------------------------------------
+4. Integrating InsightAppSec with Jira
+Setting Up Jira Integration
+Access Integration Settings:
+
+In InsightAppSec, navigate to the "Settings" tab and select "Integrations."
+Choose "Jira" from the list of available integrations.
+Connect to Jira:
+
+Enter your Jira instance URL and provide your API token or username/password for authentication.
+Map InsightAppSec vulnerabilities to Jira issue types.
+Customize Integration:
+
+choose how you want to handle the integration, such as automatically creating Jira issues for critical vulnerabilities or manually selecting vulnerabilities to push to Jira.
+Automatically Creating Jira Issues from Scan Results
+After integration, InsightAppSec can automatically create Jira tickets based on the scan results.
+You can configure rules, such as creating tickets only for vulnerabilities above a certain severity level.
+Managing Vulnerabilities in Jira
+In Jira, you'll see the created issues with all the details from InsightAppSec, including the vulnerability description, affected URLs, and remediation steps.
+As vulnerabilities are addressed, you can track their status both in Jira and InsightAppSec.
+
+
+
